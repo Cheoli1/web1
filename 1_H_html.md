@@ -7,7 +7,5 @@
 </head>
 <body>
     <h1>heading - 1</h1>
-    div
-
 </body>
 </html>
