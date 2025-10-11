@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        div 태그는 block
+    </div>
+    <span>
+        span 태그는 inline
+    </span>
+    <blockquote></blockquote>
+    <!-- ?인라인-블록 요소로 간주 됩니다.-->
+     <q></q>
+     <!--?인라인요소 짧은 인용구나 질문을 나타내는 데 적함 -->
+
+     블럭요소(block)와 인라인요소(inline)의 가장 큰 차이는
+     요소들을 어떻게 쌓아 가는가에 대한 차이는
+
+     [block 요소]
+     :블럭처럼 아래로 쌓는 특직
+
+     1. 한줄에 하나만 포함할 수 있음= 기본 너비값 : 100% (폼 엔리먼트 제외)
+     2. 너비값, 높이값 (width, height) 가질 수 있음
+     3. 상하좌우 모든 마진 가질 수 있음
+     block : 블럭시키다 더 이상 받지 않겠다. 이미 꽉참 width 100%(절대 수치)
+     아래 있는 애들이 위에 있는 애들을 침범할수 없다.
+     위에 있는 애들도 침법할수 없다.
+     예시 : <div>, <p>, <h1>~<h6>, <ul>, <li>
+
+     [inline 요소]
+    :TXT처럼 옆으로 쌓는 특징
+    1. 한줄에 여러 요소를 포함할 수 있음 = 기본 너비값 : 컨텐츠 너비값
+    2. 너비값, 높이값을 가질 수 없음(폼 엘리먼트, 이미지제외)
+    3. 상,하단 마진을 가질 수 없음(Width, height x)
+    4. block은 inline을 포괄하는 더 큰 개념(ilnine 태그 안에 block 태그 사용 금지)
+    예시 : <span>, <a>, <strong>, <em>, <img>
+
+    inlin-block 은 인라인의 속성도 가지고 있고 블러의 속성도 있다.
+    한줄을 다 찾이할수 있지만 그 공간도 다 찾이하는 속성
+
+    정리 : 블럭 요소는 레이아웃 구조나 구역 분활에 적합하고, 인라인 요소는 텍스트 내 강조, 링크, 이미지 등 세부 요소에 적합하다 
+</body>
+</html>
