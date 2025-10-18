@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media</title>
+</head>
+<body>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/03Uo9kziUDg?si=JuqzMMOzUnQWi9gD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!--*<iframe>은 HTML에서 다른 HTML 문서나 외부 웹 페이지를 포함하는 데 사용되는 요소입니다. <iframe>은 인라인 요소이며, 지정된 웹 페이지를 현재 페이지에 삽입하여 표시할 수 있습니다.  -->
+    <!--* width : 너비(css로 처리권장), height: 높이(css로 처리권장), title: 광범위적으로 사용가능한 alt. frameborder: player 바깥 쪽 frame 의 선. (css로 처리권장). allow: youtube API (전용 속성 설정 한 마디로 쓰지 말라는 것).-->
+    <iframe src="http://www.dodammedi.com/" width="1280" height="860" frameborder="0"></iframe> 
+    <!--*홈페이지 문서까지 가지고 올수 있다. --> <!-- 홈페이지 보여주고 주석처리하기 -->
+    <!-- ?<iframe>은 “다른 웹페이지를 내 페이지 안에 불러오는 창” -->
+
+    <embed src="https://www.youtube.com/embed/VF4IceGST2I" width="560" height="315">
+    <!-- *<iframe> 대체로 개발된 태그인데 보안성을 향상 시키고 싶으면 embed태그 사용하기-->
+    <!-- *<embed>은 주로 멀티미디어 리소스를 임베드(내장)하여 표시하는 데 사용됩니다.오디오, 비디오, 플래시 애니메이션 등의 멀티미디어 리소스를 표시하고 재생할 수 있습니다. -->
+    <!-- ?닫는 태그가 없음 -->
+    <!-- ?<embed>는 “문서나 미디어 파일을 직접 삽입하는 도구” -->
+
+    <!-- !<iframe>은 다른 HTML 문서나 외부 웹 페이지를 포함하고 표시할 때 주로 사용되며-->
+    <!-- !<embed>은 멀티미디어 리소스(다양한 형식의 미디어(음악, 영상, 이미지 등)를 포함하는 디지털 콘텐츠를 의미)를 임베드하여 표시할 때 주로 사용됩니다.-->
+
+    <video src="mp4/file_example_MP4_480_1_5MG.mp4" controls autoplay muted loop preload="auto" poster="images/sorry.jpg"></video>
+        <source src="mp4/file_example_MP4_1920_18MG.mp4" type="video/mp4">
+        <source src="mp4/file_example_MP4_480_1_5MG.mp4" type="video/mp4">
+    </video>
+    mp4 > 1.5mb > 3도트에서 다운로드
+    video 태그는 수동이다 사람이 옵션을 다 켜주어야 작동을 한다. controls 속성 부여
+
+    <!-- controls : 컨트롤 기능을 부여 autoplay : 영상이 대기없이 재생(사용자가 접근하자마자 재생, 신경계발달 때문에 깜짝 놀랄 수 있다.뮤트 소리 끼는 기능,서서히 커져야한다) muted : 재생을 할때 스피커가 꺼짐 loop : 무한재생, poster : 이미지를 넣으면 썸네일이(대신 오토플레이 빼줘야 함) -->
+    <!-- preload="auto" 우리나라에 없는 기능 backgroundDown lood 방식으로 재생 or stream 방식으로 재생 자동설정 -->
+    <!-- *한개의 영역에서 여러개의 비디오 파일을 연결시키고 싶을 때 사용하는 source태그 video,audio 파일 전용 태그 audio 태그는 잘 안 쓴다.-->
+    <!-- *핸드폰의 네트워크 처리 속도, 혹은 해상도에 따라서 각 환경에 맞는 영상 파일을 전송하는 방법으로 영상을 띄운다. 이기능은 iframe, embed 에는 없다.-->
+    <!-- *유튜브는 embed 방식을 선호하여 영상이 매끄럽지 못하고 -->
+    <!-- *video 넥플리스에서 적용중 매끄럽게 영상을 띄운다.-->
+    <!-- source 단독 사용 가능 여부 x / iframe, embed에는 source 태그가 없다 결국 source 태그는 컴퓨터 상황에 따라 맞는 리소스를 제공하는 태그인거네?-->
+
+    <audio src="mp3/file_example_MP3_1MG.mp3" controls></audio>
+    <!--
+        !mp4는 사파리, IE9 이상, 아이폰, 아이패드, 안드로이드, 윈도우7 폰 지원
+        !webM은 FF4이상, 오페라, 크롬 지원,
+        !ogg는 FF구버전, 오페라구버전 지원,
+        !3g 모바일 장치들 지원
+    -->
+    <!--
+        *autoplay는 video, audio 동일 속성값, 자동 재생을 시킵니다.     
+        *controls는 video, audio 동일 속성값, 재생영역에 제어버튼을 활성화 하는 속성값. 
+        *loop는 video, audio 동일 속성값, 반복 재생을 시키는 속성값. 
+        *preload는 video, audio 동일 속성값, 스트리밍 방식이 아닌 백그라운드 다운로드를 통해 재생. (우리나라에서 안 쓰는 속성)
+        *muted는 video, audio 동일 속성값, 스피커 활성화, 미디어 객체를 불러왔을때, 초기 설정을 mute 상태로 불러오는 속성값. 
+        *src는 video, audio 동일 속성값, 미디어 객체를 지정하는 속성값. 
+        *poster 는 video 전용 속성값, video객체를 불러오지 못하거나 thumbNail로 이미지(autoplay off)를 출력 시키는 속성값`. 
+        *width, height는 video 전용 속성값, video 객체 영역의 크기를 정하는 속성값. 
+        *source는 여러 파일을 클라이언트 환경에 따라 다르게 적용할 수 있다.
+    -->
+</body>
+</html>
