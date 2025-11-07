@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>from Tag</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>필수입력사항</legend>
+
+                    <caption>사용자정보</caption>
+
+                    <label for="userName"> 아이디</label>
+                    <input type="text" id="userName" placeholder="입력해주세요." title="아이디를 입력해주세요.">
+
+                    <label for="userPW">비밀번호</label>
+                    <input type="password" id="userPW" placeholder="입력해주세요.">
+
+                    <label for="userPWChk">비밀번호 확인</label>
+                    <input type="password" id="userPWChk" placeholder="입력해주세요.">
+
+                    <label for="userName">이름</label>
+                    <input type="text" id="userName" placeholder="입력해주세요.">
+
+                    <label>이메일</label>
+                    <input type="text" placeholder="입력해주세요."> @
+                    <select>
+                        <option>메일선택</option>
+                            <option>naver.com</option>
+                            <option>daum.com</option>
+                        </optgroup>
+             </select>
+        </fieldset>
+        <fieldset>
+            <legend>선택입력사항</legend>
+
+                    <caption>부과정보</caption>
+
+                    <label for="userAddr">주소</label>
+                    <input type="text" placeholder="입력해주세요." id="userAddr">
+                    <input type="button" value="주소찾기">
+ 
+                    <label>연락처</label>
+                    <input type="text" placeholder="입력해주세요.">
+
+                    <label for="btn_radio1">성별</label>
+                    <input type="radio" name="radioGroup" id="btn_radio1">
+                    <label for="btn_radio1">남자</label>
+                    <input type="radio" name="radioGroup" id="btn_radio2">
+                    <label for="btn_radio2">여자</label>
+
+                    <label>취미</label>
+                    <input type="checkbox" id="btn_chk1">
+                    <label for="btn_chk1">독서</label>
+                    <input type="checkbox" id="btn_chk2">
+                    <label for="btn_chk2">게임</label>
+                    <input type="checkbox" id="btn_chk2">
+                    <label for="btn_chk2">영화</label>
+
+                    <label>생년월일시</label>
+                    <input type="datetime-local">
+
+                    <label>좋아하는 색상</label>
+                    <input type="color" id="typeColor">
+
+                    <label>키(CM)</label>
+                    <input type="range" min="-2" max="2" step="1" value="0">
+
+                    <label>SNS</label>
+                    <input type="url" placeholder="입력해주세요.">
+
+                    <label for="userIntro">가입인사</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+            </fieldset>
+            <input type="submit" value="확인">
+            <input type="reset" value="취소">
+    </form>
+</body>
+</html>
